@@ -1,0 +1,14 @@
+{
+  "directories": [
+    "starwars",
+    "got",
+    "wagner"
+  ],
+  "ftp": {
+    "host": "51.643.264.122",
+    "username": "username",
+    "password": "password"
+  },
+  "backup_dir": "backups",
+  "max_files": 5
+}
