@@ -21,7 +21,7 @@ def remove_old_files(session, directory, max_files):
     """
     Remove all the old files with start with the directory name
     """
-    all_files = [x for x in session.nlst() if x.startswith(directory)]
+    all_files = [x for x in session.nlst() if x.startswith(directory[directory.rindex('/') + 1:])]
 
     diff = len(all_files) - max_files
     if diff > 0:
